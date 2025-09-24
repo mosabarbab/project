@@ -1,7 +1,8 @@
 .container{
     background-color: rgb(3, 122, 190);
-    width: 90vw;
-   margin-left:  4%;
+    width: 100vw;
+   /* margin-left:  4%; */
+   /* position: absolute; */
 }
 .navbar{
     position: fixed;
@@ -63,8 +64,8 @@
     margin-right: 10%;
 }
 .img img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     box-shadow:  10px 10px rgb(0, 136, 255);
 }
@@ -75,30 +76,28 @@
     justify-content:center;
 }
 .about1 h3{
-    color: brown;
-    justify-self: center;
-    /* padding-top: 10%; */
+    padding-bottom: 20%;
+    font-size: 20px;
 }
 .text{
     margin-right: 10%;
     margin-bottom:  10%;
 }
-.img img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
+
 .services{
-    height: 550;
-    border: 1px solid rgb(0, 81, 255);
+    height: 100vh;
+    border: 1px solid rgb(44, 44, 44);
 }
-.services h3{
-    
-    justify-self: center;
-}
+/* .services h3{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20%;
+    background-color: blueviolet;
+} */
 .services2{
     display: flex;
     justify-content: space-around;
+    padding-top: 13%;
 }
 .services2 img{
     justify-self: center;
@@ -109,12 +108,13 @@
     border-radius: 10px;
 }
 .services2 h4{
-    color: blue;
+    color: rgb(0, 0, 0);
     justify-self: center;
 }
 .services2 p{
-    color: aqua;
-    padding-left: 14%;
+    color: rgb(0, 0, 0);
+    padding-left: 10%;
+    padding-right: 12%;
 }
 .s1{
     background-color: rgba(129, 129, 129, 0.322);
@@ -133,11 +133,11 @@
 }
 
 .skills{
-    height: 550px;
+    height: 100vh;
     border: 1px solid rgb(0, 81, 255);
 }
 .skills h4{
-    color: blue;
+    color: rgb(3, 139, 250);
     justify-self: center;
     font-size: 25px;
     font-weight: bolder;
@@ -154,18 +154,19 @@
     justify-content:center;
     padding-top: 10%;
     gap: 6px;
-    color: rgb(0, 136, 255);
+    color: rgb(0, 0, 0);
 }
 .skills p{
     padding-left: 40%;
     padding-top: 20%;
     font-weight: bolder;
     font-size: large;
+    color: aliceblue;
 }
 .sk1{
     width: 272px;
     height: 250px;
-    align-items: ;
+    align-items: center;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
@@ -181,3 +182,120 @@
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
+.project{
+    height: 600px;
+}
+.project h3{
+    padding-top: 8%;
+    font-size: 20px;
+    align-self: flex-start;
+    padding-left: 5%;
+}
+.project1{
+    display: flex;
+    justify-content: space-around;
+    gap: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+} 
+.pro1{
+    background-color: rgba(161, 155, 155, 0.507);
+    width: 350px;
+    height: 400px;
+}
+.pro2{
+    background-color: rgba(161, 155, 155, 0.507);
+    width: 350px;
+    height: 400px;
+}
+.pro3{
+    background-color:  rgba(161, 155, 155, 0.507);
+    width: 350px;
+    height: 400px;
+}
+.pro4{
+    background-color:  rgba(161, 155, 155, 0.507);
+    width: 350px;
+    height: 400px;
+}
+.project1 h4{
+    color: yellowgreen;
+    font-size: 20px;
+    font-weight: bold;
+    justify-self: center;
+}
+.project1 img{
+    width: 220px;
+    height: 150px;
+    border-radius: 20%;
+    padding-left: 4%;
+    padding-top: 4%;
+
+}
+.bolg{
+    height: 100vh;
+}
+.project1 p{
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    padding-left: 5%;
+}
+.project1 a{
+    padding-left: 5%;
+}
+.bolg h3{
+    align-self:flex-start;
+    color: wheat;
+    padding-left: 5%;
+    padding-top: 8%;
+}
+.blog1{
+    display: flex;
+    justify-content: space-around;
+}
+.bl1{
+    background-color: slategray; 
+}
+.bl2{
+    background-color: slategrey;
+}
+.Contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(206, 202, 201, 0.404);
+    width: 80vw;
+    height:100vh;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 8px;
+   
+}
+.touch{
+    margin-top: 15%;
+    border: 1px solid white;
+    width: 30%;
+    height: 40%;
+    box-shadow:0 10px 10px  rgb(11, 11, 12);
+    padding:4%;
+}
+.mil{
+    align-items: center;
+    margin-top: 15%;
+    border: 1px solid white;
+    width: 30%;
+    height: 40%;
+    box-shadow:0 10px 10px  rgb(11, 11, 12);
+    padding:4%;
+    
+    
+}
+.mil input{
+    margin-bottom: 15px;
+}
+
+.touch h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+
