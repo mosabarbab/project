@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: rgb(236, 230, 230);
+    }
+
+    .navbar{
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+      background-color:rgb(0, 113, 219);
+      padding: 2%;
+      border-radius: 5px;
+    }
+    .navbar li{
+      list-style: none;
+    }
+    .navbar li a{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+      font-weight: bold;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .navbar button{
+      
+      background-color: rgb(0, 0, 0);
+      padding: 7px;
+      color:white;
+      border-radius: 8px;
+    }
+    header {
+      
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .text {
+      background:rgb(255, 255, 255);
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .text p {
+      color: rgb(83, 82, 82);
+    }
+
+    .text a {
+      margin-top: 10px;
+      color: rgb(0, 119, 255);
+      text-decoration: none;
+    }
+
+    .text a:hover {
+      color: rgb(76, 0, 255);
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+
+        <li><a href="index.html">Home</a></li></li>
+            <a href="login.html"><button>Log in</button></a>
+            <a href="sign.html"><button>Sign Up</button></a>
+    </nav>
+  <header>
+    <h1>My Blog</h1>
+    <p>Welcome to my simple blog page</p>
+  </header>
+
+  <div class="container">
+    <div class="text">
+      <h2>How to Start Programming</h2>
+      <p>Starting programming can be exciting but also overwhelming. The key is to begin with the basics. 
+      Start learning a simple programming language like Python or JavaScript. Practice daily, work on small projects, 
+      and gradually challenge yourself with more complex tasks. Remember, consistency is more important than speed.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="text">
+      <h2>Best Websites to Learn HTML, CSS, and JavaScript</h2>
+      <p>If you want to learn web development, several websites can help you start for free. Some popular choices include: 
+      <strong>W3Schools</strong>, <strong>MDN Web Docs</strong>, and <strong>freeCodeCamp</strong>. These sites provide tutorials, 
+      exercises, and examples that make learning interactive and easy to understand.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+</body>
+</html>
