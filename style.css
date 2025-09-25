@@ -68,6 +68,7 @@
     border-radius: 50%;
     box-shadow:  10px 10px rgb(0, 136, 255);
 }
+
 .About{
     display: flex;
     height: 100vh;
@@ -172,7 +173,7 @@
 }
 .project{
     height: 600px;
-    
+
 }
 .project h3{
     padding-top: 8%;
@@ -263,7 +264,7 @@
 }
 .touch{
     margin-top: 15%;
-    border: 1px solid white;
+    border: 1px solid rgb(173, 173, 173);
     width: 30%;
     height: 40%;
     box-shadow:0 10px 10px  rgb(11, 11, 12);
@@ -272,7 +273,7 @@
 .mil{
     align-items: center;
     margin-top: 15%;
-    border: 1px solid white;
+    border: 1px solid rgb(170, 165, 165);
     width: 30%;
     height: 40%;
     box-shadow:0 10px 10px  rgb(11, 11, 12);
