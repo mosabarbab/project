@@ -13,25 +13,50 @@
 }
 
 .navbar{
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  background-color:rgb(0, 113, 165);
-  padding: 2%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-family:sans-serif;
+    padding-right: 10%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color:  rgb(3, 122, 190);;
 }
-
 .navbar li{
-    list-style: none;
+    list-style: none;    
 }
-
+.navbar li a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    transition: 1s;
+    text-shadow: 0 15px 10px black;
+}
 .navbar li a{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
-  font-weight: bold;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-right: 17px;
+    text-decoration: none;
 }
-
+.navbar button{
+    background-color: rgb(3, 122, 190);
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.navbar button:hover{
+    background-color: black;
+    color: white;
+    transition:1s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button{
+    align-items: self-start;
+}
+    
     .signup {
       background:rgb(243, 244, 245);
       padding: 30px;
@@ -82,13 +107,24 @@
   </style>
 </head>
 <body>
-   <nav class="navbar">
-        <li><a href="index.html">Home</a></li></li>
+    <nav class="navbar">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Aboutme</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Skills</a></li>
+        <li><a href="index.html">Project</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="bolg.html">Blog</a></li>
+        <div class="button">
+            <a href="login.html"><button>Log in</button></a>
+            <a href="sign.html"><button>Sign Up</button></a>
+        </div>
     </nav>
 
     <div class="container">
   <div class="signup">
-    <h2>Cearte New Account</h2>
+    <h2>Create New Account</h2>
     <form>
       <input type="text" placeholder="Full Name" required>
 

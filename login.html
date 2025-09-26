@@ -13,21 +13,46 @@
    height: 100vh;
 }
 .navbar{
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  background-color: #007BFF;
-  padding: 2%;
+    position: fixed;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 10%;
+    border-radius: 10px;
+    background-color:  rgb(3, 122, 190);;
 }
 .navbar li{
-    list-style: none;
+    list-style: none;    
+}
+.navbar li a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 1s;
+    text-shadow: 0 15px 10px black;
 }
 .navbar li a{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
-  font-weight: bold;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-right: 25px;
+    text-decoration: none;
+}
+.navbar button{
+    background-color:rgb(3, 122, 190);;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid white;
+    
+}
+.navbar button:hover{
+     background-color: black;
+     box-shadow: 0 6px 10px black;
+     transition: 1s;
+     padding: 10px;
 }
     
 .login{
@@ -70,10 +95,19 @@
     </style>
 </head>
 <body>
-     <nav class="navbar">
+    <nav class="navbar">
 
-        <li><a href="index.html">Home</a></li></li>
-          
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">Aboutme</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#project">Porject</a></li>
+        <li><a href="index.html#Contact">Contact</a></li>
+        <li><a href="bolg.html">Blog</a></li>
+        <div class="button">
+            <a href="login.html"><button>Log in</button></a>
+            <a href="sign.html"><button>Sign Up</button></a>
+        </div>
     </nav>
 
     <div class="container">
@@ -86,7 +120,7 @@
     
                 <input type="password" placeholder="password">
            
-            <button type="button">Enter</button>
+            <button type="button">Login</button>
         </form>
          <p>I hane account?<a href="sign.html">Cearte account</a></p>
     </div>

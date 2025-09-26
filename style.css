@@ -18,8 +18,10 @@
     list-style: none;    
 }
 .navbar li a:hover{
-    color: rgb(0, 174, 255);
-    border-bottom: 2px solid rgb(1, 136, 247);
+    color: rgb(255, 255, 255);
+    font-size:25px;
+    transition: 1s ;
+    text-shadow: 0 20px  10px black;
 }
 .navbar li a{
     font-size: 20px;
@@ -29,16 +31,26 @@
     text-decoration: none;
 }
 .navbar button{
-    background-color: rgb(0, 0, 0);
+    background-color:rgb(16, 137, 250);
     color: white;
     padding: 8px;
     border-radius: 10px;
+    border: 1px solid white;
+    
 }
-.button{
-    align-items: self-start;
+.navbar button:hover{
+    background-color: black;
+    transition: 1s;
+    box-shadow: 0 6px 10px black;
 }
+
 .text h1 span{
-    color: rgb(3, 41, 207);
+    color: rgb(255, 255, 255);
+}
+.text h1 span:hover{
+    color: rgb(0, 0, 0);
+    transition:1s;
+    text-shadow: 0 8px 8px;
 }
 .home{
     display: flex;
@@ -54,13 +66,29 @@
 .home button{
     padding: 10px;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(15, 15, 15, 0.856);
     width: 80%;
     font-size: large;
     border-radius: 8px;
+    border: 1px solid white;
+    box-shadow: 0 10px 10px rgb(0, 0, 0);
 }
-.text{
-    margin-right: 10%;
+.home button:hover{
+    background-color: rgb(16, 137, 250);
+    transition: 1s;
+    border: 1px solid black;
+    box-shadow: 0 10px 10px rgb(255, 255, 255);
+}
+.text h1:hover{
+    color: rgb(240, 232, 232);
+    text-shadow: 0 8px 8px black;
+    transition: 1s;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text h1 span:hover{
+    color: black;
+    font-family:serif;
+
 }
 .img img{
     width: 400px;
@@ -68,7 +96,9 @@
     border-radius: 50%;
     box-shadow:  10px 10px rgb(0, 136, 255);
 }
-
+.about1{
+    display: inline;
+}
 .About{
     display: flex;
     height: 100vh;
@@ -76,6 +106,12 @@
     justify-content:center;
 }
 
+.icon a{
+    color: rgb(2, 2, 2);
+}
+.icon a:hover{
+    color: rgb(255, 255, 255);
+}
 .text{
     margin-right: 10%;
     margin-bottom:  10%;
@@ -98,6 +134,7 @@
     width: 300px;
     height: 200px;
     border-radius: 10px;
+    box-shadow: 0 10px 10px black;
 }
 .services2 h4{
     color: rgb(0, 0, 0);
@@ -109,19 +146,42 @@
     padding-right: 12%;
 }
 .s1{
-    background-color: rgba(129, 129, 129, 0.322);
+    background-color: rgba(255, 255, 255, 0.753);
     width: 350px;
     height: 370px;
+    box-shadow: 0 10px 10px black;
 }
+.s1:hover{
+    width: 370px;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 0.459);
+    transition:1s;
+}
+
 .s2{
-    background-color: rgba(138, 138, 138, 0.301);
+    background-color: rgba(255, 255, 255, 0.829);
     width: 350px;
     height: 370px;
+    box-shadow: 0 10px 10px black;
 }
+.s2:hover{
+    width: 370px;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 0.459);
+    transition:1s;
+}
+
 .s3{
-    background-color: rgba(117, 117, 117, 0.336);
+    background-color: rgba(255, 255, 255, 0.815);
     width: 350px;
     height: 370px;
+    box-shadow: 0 10px 10px black;
+}
+.s3:hover{
+    width: 370px;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 0.459);
+    transition:1s;
 }
 
 .skills{
@@ -256,7 +316,7 @@
     justify-content: space-around;
     background-color: rgba(206, 202, 201, 0.404);
     width: 80vw;
-    height:100vh;
+    height:90vh;
     margin: auto;
     margin-bottom: 10%;
     border-radius: 8px;
@@ -277,14 +337,29 @@
     width: 30%;
     height: 40%;
     box-shadow:0 10px 10px  rgb(11, 11, 12);
-    padding:4%;
-    
-    
+    padding:4%;   
 }
 .mil input{
     margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid grey;
 }
-
+.mil button{
+    padding: 4px;
+    width: 60px;
+    background-color: rgba(0, 136, 255, 0.404);
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.mil button:hover{
+    padding: 5px;
+    width: 70px;
+    background-color: rgba(0, 199, 17, 0.747);
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: 1s;
+}
 .touch h4{
     font-size: 25px;
     font-weight: bold;
