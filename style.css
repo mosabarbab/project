@@ -1,21 +1,37 @@
-.container{
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
     background-color: rgb(3, 122, 190);
-    width: 100vw;
 }
-.navbar{
+.container{
+   
+    width: 100%;
+    
+}
+.navbar {
     position: fixed;
     display: flex;
+    justify-content: center; 
+    align-items: center;     
     padding: 20px;
-    align-items: center;
-    justify-content: space-between;
     font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    padding-right: 10%;
+    font-family:sans-serif;
     border-radius: 10px;
-    background-color:  rgb(3, 122, 190);;
+    width: 100%;              
+    top: 0;  
+    gap: 30px;               
 }
+
 .navbar li{
-    list-style: none;    
+    list-style: none; 
+
+}
+.navbar li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 .navbar li a:hover{
     color: rgb(255, 255, 255);
@@ -23,13 +39,7 @@
     transition: 1s ;
     text-shadow: 0 20px  10px black;
 }
-.navbar li a{
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-right: 25px;
-    text-decoration: none;
-}
+
 .navbar button{
     background-color:rgb(16, 137, 250);
     color: white;
@@ -56,7 +66,7 @@
 }
 .home{
     display: flex;
-    height: 600px;
+    height: 100vh;
     border: 1px solid rgb(16, 137, 250);
     align-items: center;
     justify-content:center;
@@ -69,7 +79,6 @@
     padding: 10px;
     color: rgb(255, 255, 255);
     background-color: rgba(15, 15, 15, 0.856);
-    width: 80%;
     font-size: large;
     border-radius: 8px;
     border: 1px solid white;
@@ -148,39 +157,36 @@
     padding-right: 12%;
 }
 .s1{
-    background-color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(255, 255, 255, 0.932);
     width: 350px;
     height: 370px;
     box-shadow: 0 10px 10px black;
 }
 .s1:hover{
-    width: 370px;
     height: 390px;
     background-color: rgba(255, 255, 255, 0.459);
     transition:1s;
 }
 
 .s2{
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgba(255, 255, 255, 0.904);
     width: 350px;
     height: 370px;
     box-shadow: 0 10px 10px black;
 }
 .s2:hover{
-    width: 370px;
     height: 390px;
     background-color: rgba(255, 255, 255, 0.459);
     transition:1s;
 }
 
 .s3{
-    background-color: rgba(255, 255, 255, 0.815);
+    background-color: rgba(255, 255, 255, 0.918);
     width: 350px;
     height: 370px;
     box-shadow: 0 10px 10px black;
 }
 .s3:hover{
-    width: 370px;
     height: 390px;
     background-color: rgba(255, 255, 255, 0.459);
     transition:1s;
@@ -221,11 +227,25 @@
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
+.sk1:hover{
+    width: 285px;
+    height: 258px;
+    background-color: rgba(255, 255, 255, 0.514);
+    box-shadow: 0 10px 10px black;
+    transition: 1s;
+}
 .sk2{
     width: 272px;
     height: 250px;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
+}
+.sk2:hover{
+    width: 285px;
+    height: 258px;
+    background-color: rgba(255, 255, 255, 0.514);
+    box-shadow: 0 10px 10px black;
+    transition: 1s;
 }
 .sk3{
     width: 272px;
@@ -233,8 +253,15 @@
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
+.sk3:hover{
+    width: 285px;
+    height: 258px;
+    background-color: rgba(255, 255, 255, 0.514);
+    box-shadow: 0 10px 10px black;
+    transition: 1s;
+}
 .project{
-    height: 600px;
+    height: 100vh;
 
 }
 .project h3{
@@ -326,39 +353,13 @@
     /* padding-top: 4%; */
 
 }
-.bolg{
-    height: 100vh;
-}
-.project1 p{
-    color: rgb(49, 48, 48);
-    font-size: 15px;
-    padding-left: 5%;
-}
-.project1 a{
-    padding-left: 5%;
-}
-.bolg h3{
-    align-self:flex-start;
-    color: wheat;
-    padding-left: 5%;
-    padding-top: 8%;
-}
-.blog1{
-    display: flex;
-    justify-content: space-around;
-}
-.bl1{
-    background-color: slategray; 
-}
-.bl2{
-    background-color: slategrey;
-}
+
 .Contact{
     display: flex;
     justify-content: space-around;
     background-color: rgba(206, 202, 201, 0.404);
     width: 80vw;
-    height:90vh;
+    height:vh;
     margin: auto;
     margin-bottom: 10%;
     border-radius: 8px;
