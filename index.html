@@ -34,7 +34,7 @@
     </nav>
 
     <div class="container">
-        <!-- Home -->
+        <!-- Ho -->
         <section id="home">
             <p><span>Hi, I'm </span><br><b>Mosab Arbab</b> <br>Web Developer & Designer.
                 <br> <button ><a href="#about">here me</a></button>
@@ -43,7 +43,7 @@
         
         </section>
 
-        <!-- About -->
+        <!-- Abo -->
         <section id="about">
             <h3>About Me</h3>
             <div class="about2">
@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- Serv -->
         <section id="services">
             <h3>Services</h3>
             <div class="services">
@@ -84,7 +84,7 @@
             </div>
         </section>
 
-        <!-- Skills -->
+        <!-- Ski -->
         <section id="skills">
             <h3>Skills</h3>
             <div class="skills">
@@ -103,7 +103,7 @@
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Pro -->
         <section id="projects">
             <h3>Projects</h3>
             <div class="projects">
@@ -148,7 +148,7 @@
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- Cont -->
         <section id="contact">
             <h3>Contact</h3>
             <div class="contact">
@@ -184,12 +184,17 @@
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Foo -->
         <footer>
            
         </footer>
     </div>
-
+ <script>
+        const toggle = document.getElementById('menu-toggle');
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => { if (toggle.checked) toggle.checked = false; });
+        });
+    </script>
 </body>
 
 </html>
