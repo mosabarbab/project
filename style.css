@@ -120,11 +120,12 @@ li {
   font-weight: 500;
   position: relative;
   overflow: hidden;
+  border: 1px solid white;
   transition: 0.3s;
 }
 
 .nav-button:hover {
-  background: rgb(0, 110, 255);
+  background: rgb(0, 26, 255);
   transition: 1s;
 }
 
