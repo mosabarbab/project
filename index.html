@@ -2,126 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>lcok app</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosab Arbab - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
 
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Aboutme</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Porject</a></li>
-        <li><a href="#Contact">Contact</a></li>
-        <li><a href="bolg.html">Blog</a></li>
-        <div class="button">
-            <a href="login.html"><button>Log in</button></a>
-            <a href="sign.html"><button>Sign Up</button></a>
-        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="bolg.html" class="nav-link">Blog</a></li>
+            <li class="nav-item nav-buttons">
+                <a href="login.html" class="nav-button">Log in</a>
+                <a href="sign.html" class="nav-button">Sign Up</a>
+            </li>
+        </ul>
     </nav>
+
     <div class="container">
+        <!-- Home -->
+        <section id="home">
+            <p><span>Hi, I'm </span><br><b>Mosab Arbab</b> <br>Web Developer & Designer.
+                <br> <button ><a href="#about">here me</a></button>
+            </p> 
+        <img src="./img/Gemini_Generated_Image_mdeviqmdeviqmdev-removebg-preview-removebg-preview.png" alt="">
+        
+        </section>
 
-        <div class="home" id="home">
-            <div class="text">
-                <p>Hi it`s </p>
-                <h1><span>M</span>OSAB <span>A</span>RBAB <br> &nbsp;&nbsp Web Developer</h1>
-                <a href="#about"><button>learn more</button></a>
-            </div>
-
-            <div class="img">
-                <img src="./img/Gemini_Generated_Image_mdeviqmdeviqmdev-removebg-preview-removebg-preview.png"
-                    alt="my img">
-            </div>
-        </div>
-
-        <div class="about1" id="about">
-
-            <div class="About">
-                <div class="text">
-
-                    <h1><span>M</span>OSAB <span>A</span>RBAB</h1>
-                    <p>
-
-                        Web Developer and UI UX Designer. <br>
+        <!-- About -->
+        <section id="about">
+            <h3>About Me</h3>
+            <div class="about2">
+            <p> Web Developer and UI UX Designer. <br>
                         I create simple and modern websites using HTML, CSS.<br>
                         My work focuses on clean design, responsive pages, and easy <br>user experience.
                         I enjoy turning ideas into real websites.
-                    </p>
-                    <div class="icon">
-                        <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="./img/Gemini_Generated_Image_mdeviqmdeviqmdev-removebg-preview-removebg-preview.png"
-                        alt="my img">
-                </div>
+             <br> <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </p>
+            <img src="./img/Gemini_Generated_Image_mdeviqmdeviqmdev-removebg-preview-removebg-preview.png" alt="">
             </div>
-        </div>
+        </section>
 
-        <div class="services" id="services">
-            <div class="services2">
-                <div class="s1">
+        <!-- Services -->
+        <section id="services">
+            <h3>Services</h3>
+            <div class="services">
+                <div class="card">
                     <img src="./img/677d3e96-e0af-4f0d-94a9-7a71190f86ac.jpeg" alt="">
-                    <h4>Front end</h4>
+                    <h3>Front end</h3>
                     <p>Use HTML ,CSS ,javaScript to cearte pages that are responsive,fast and easy to use.</p>
                 </div>
-                <div class="s2">
-                    <img src="./img/1e4c1738-0550-4550-a64b-3aaccf21df1f.jpeg" alt="">
-                    <h4>Back end</h4>
+
+                <div class="card">
+                  <img src="./img/1e4c1738-0550-4550-a64b-3aaccf21df1f.jpeg" alt="">
+                    <h3>Back end</h3>
                     <p>Manage servers databases, and appliction logic to make everything work smoothly.</p>
                 </div>
-                <div class="s3">
-                    <img src="./img/53d788fb-7e32-431e-8fe5-09f7d48ffb00.jpeg" alt="">
-                    <h4> Ui UX </h4>
+
+                <div class="card">
+                     <img src="./img/53d788fb-7e32-431e-8fe5-09f7d48ffb00.jpeg" alt="">
+                    <h3> Ui UX </h3>
                     <p>Design user-friendily layouts, choose colors and stles,and impeove how users interact with the
                         product</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="skills" id="skills">
-
-            <div class="sh">
-                <div class="sk1">
-                    <img src="./img/download (1).png" alt="">
+        <!-- Skills -->
+        <section id="skills">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="sk">
+                    <p><i class="fa-brands fa-html5"></i> </p> 
                     <p>HTML</p>
                 </div>
-                <div class="sk2">
-                    <img src="./img/download__2_-removebg-preview.png" alt="">
+                <div class="sk">
+                    <p><i class="fa-brands fa-css3-alt"></i></p>
                     <p>CSS</p>
                 </div>
-                <div class="sk3">
-                    <img src="./img/download.png" alt="">
+                <div class="sk">
+                    <p><i class="fa-brands fa-figma"></i></p>
                     <p>FIGMA</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="project" id="project">
-            <h3>PROJECTS</h3>
-            <div class="project1">
+        <!-- Projects -->
+        <section id="projects">
+            <h3>Projects</h3>
+            <div class="projects">
 
-                <div class="pro2">
-                    <img src="./img/subsicriptoin card.PNG" alt="">
-                    <h4>Subscirption Card</h4>
-                    <p> I learned how to organize elements in HTML
-                        coordinate colors and fonts with CSS for an ,how to use Flexbox to arrange
-                        elements next to each other, and add simple effects such as shadows and hover effects.</p>
-                    <a href="https://mosabarbab.github.io/project-1/">learn more</a>
-                </div>
-
-                <div class="pro1">
+                 <div class="pro">
                     <img src="./img/chocolet.png" alt="">
-                    <h4>Cake shop</h4>
+                    <h3>Cake shop</h3>
                     <p>As part of my UX/UI learning journey, I created this prototype for ordering chocolates in Figma.
                         The goal was to practice designing a food delivery app that looked simple, modern, and easy to
                         use.</p>
@@ -129,10 +118,17 @@
                         href=https://www.figma.com/proto/kTjfIJMD3shNhtILiYVs4S/Untitled?node-id=11-3&t=2Fmuq7sWZLOwQ7h2-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A8">lesrn
                         more</a>
                 </div>
-
-                <div class="pro3">
+                <div class="pro">
+                    <img src="./img/subsicriptoin card.PNG" alt="">
+                    <h3>Subscirption Card</h3>
+                    <p> I learned how to organize elements in HTML
+                        coordinate colors and fonts with CSS for an ,how to use Flexbox to arrange
+                        elements next to each other, and add simple effects such as shadows and hover effects.</p>
+                    <a href="https://mosabarbab.github.io/project-1/">learn more</a>
+                </div>
+               <div class="pro">
                     <img src="./img/calendar.png" alt="">
-                    <h4>Calendar</h4>
+                    <h3>Calendar</h3>
                     <p>This`s calendar design using Figma.
                         It allows for organized display of days, weeks, and months with a simple and clear interface.
                         It can be used to plan appointments, manage tasks, or track daily activities.
@@ -141,22 +137,26 @@
                         href="https://www.figma.com/proto/bJrSfzgDQF8ywjBUBRBSxw/calendar?node-id=26-2&t=c6h0X5K0r9Cqz4Dz-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">learn
                         more</a>
                 </div>
-                <div class="pro4">
+                 <div class="pro">
                     <img src="./img/Screenshot from 2025-09-25 12-26-46.png" alt="">
-                    <h4>profile</h4>
+                    <h3>profile</h3>
                     <p>A personal landing page designed to display your name, and profile picture.
                         It includes navigation links and a get started button to attract clients or visitors.
                         It also showses the companies you've worked with.</p>
                     <a href="https://mosabarbab.github.io/project3/">lean more</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="Contact" id="Contact">
+        <!-- Contact -->
+        <section id="contact">
+            <h3>Contact</h3>
+            <div class="contact">
             <div class="touch">
-                <h4>Get in Touch</h4>
-                <p>if you have any inquiries or just want to <br>say hi, use the contact form</p>
-                <p><i class="fa-solid fa-envelope"></i>:<a href="milto:c94924161@gmail.com">c94924161@gmail.com</a>
+             <p>if you have any inquiries or just  want to say hi, <br>use the contact form.</p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>:<a href="mailto:c94924161@gmail.com">c94924161@gmail.com</a> <br>
+                    <i class="fa-solid fa-phone"></i><a href="tel:+250 724118811">+250 724118811</a>
                 </p>
                 <div class="icon">
                     <a href="https://www.facebook.com/mosabarbababdo"><i class="fa-brands fa-square-facebook"></i></a>
@@ -181,11 +181,22 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-        </div>
+            </div>
+        </section>
 
+        <!-- Footer -->
         <footer>
-            <p>© 2025 - Mosab arbab</p>
+            <p>© 2025 - Mosab Arbab</p>
         </footer>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => { if (toggle.checked) toggle.checked = false; });
+        });
+    </script>
 </body>
 
 </html>
