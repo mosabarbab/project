@@ -6,56 +6,108 @@
     <title>login</title>
     <style>
 .container{
-   background-color:rgb(3, 122, 190) ;
+  background: linear-gradient(135deg, #0077ff, #f0f8ff);
     display: flex;
    justify-content: center;
    align-items: center;
    height: 100vh;
 }
+/* ===== Navbar ===== */
 .navbar {
-    position: fixed;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    padding: 20px;
-    font-size: 10px;
-    font-family:sans-serif;
-    border-radius: 10px;
-    width: 100%;  
-    gap: 30px;           
-    top: 0;                   
-}
-.navbar li{
-    list-style: none;    
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  /* color: rgb(255, 1, 1); */
+  background-color: rgba(0, 149, 255, 0.884);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
 }
 
-.navbar li a{
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+.menu-toggle {
+  position: absolute;
+  left: -9999px;
 }
-.navbar li a:hover{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    transition: 1s;
-    text-shadow: 0 15px 10px black;
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  /* background: transparent; */
+  border: none;
+  width: 36px;
+  height: 36px;
+  margin-right: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.navbar button{
-    background-color:rgb(3, 122, 190);;
-    color: white;
-    padding: 8px;
-    border-radius: 10px;
-    border: 1px solid white;
-    
+
+.hamburger span {
+  display: block;
+  min-height: 3px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  transition: .25s;
+  border-radius: 2px;
 }
-.navbar button:hover{
-     background-color: rgb(2, 48, 255);
-     box-shadow: 0 6px 10px black;
-     transition: 1s;
-     padding-left: 10px;
-     padding-right: 10px;
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
 }
+
+.nav-item {
+  margin: 0 8px;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  /* border-radius: 4px; */
+  font-weight: 700;
+  color: white;
+  position: relative;
+  transition: .25s;
+}
+
+
+
+.nav-link:hover {
+  color: black;
+  font-size: 20px;
+  text-shadow: 0 10px 10px black;
+  transition: 1s;
+}
+
+/*  Butt  */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 10px;
+}
+
+
+.nav-button {
+  padding: 5px 16px;
+  border-radius: 4px;
+  /* background: rgba(0, 110, 255, 0); */
+  color: white;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background: rgb(0, 26, 255);
+  transition: 1s;
+}
+
+
     
 .login{
     background-color: aliceblue;
@@ -94,22 +146,35 @@
 .login a:hover{
     color: blue;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
     </style>
 </head>
 <body>
-    <nav class="navbar">
+   <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
 
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">Aboutme</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="index.html#project">Porject</a></li>
-        <li><a href="index.html#Contact">Contact</a></li>
-        <li><a href="bolg.html">Blog</a></li>
-        <div class="button">
-            <a href="login.html"><button>Log in</button></a>
-            <a href="sign.html"><button>Sign Up</button></a>
-        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="bolg.html" class="nav-link">Blog</a></li>
+            <li class="nav-item nav-buttons">
+                <a href="login.html" class="nav-button">Log in</a>
+                <a href="sign.html" class="nav-button">Sign Up</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="container">

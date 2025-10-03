@@ -40,7 +40,7 @@ li {
   align-items: center;
   padding: 0 2rem;
   /* color: rgb(255, 1, 1); */
-  background-color: rgba(0, 10, 17, 0.363);
+  background-color: rgb(2, 148, 252);
   position: fixed;
   top: 0;
   left: 0;
@@ -173,7 +173,7 @@ h3{
   margin-top: 15px;
   padding: 10px 20px;
   background:rgb(0, 132, 255);
-  border:1px solid white;
+  border:1px shttps://mosabarbab.github.io/project/sign.htmlolid white;
   border-radius: 6px;
 }
 
@@ -402,7 +402,7 @@ footer {
 
   .nav-link {
     display: block;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 50%;
     color: white;
   }
